@@ -1,0 +1,200 @@
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week] {
+    padding: 5px 10px;
+    line-height: 2;
+    min-height: 30px;
+    width: 100%;
+}
+
+.required {
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+}
+
+.handlediv {
+    display: none;
+}
+
+.postbox {
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.hndle {
+    background: #25669F;
+    color: #F5F5F5;
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+.hndle span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.help {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+}
+
+.hndle span a {
+
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    font-size: 23px;
+
+}
+
+.wrap {
+    padding-top: 0;
+}
+
+.autoregen-text {
+
+    font-size: 10px;
+    color: rgb(0, 98, 150);
+}
+
+.lcp-head {
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    overflow: hidden;
+    max-height: 200px;
+    box-sizing: border-box;
+}
+
+.lcp-title {
+
+    border-bottom: 3px solid #25669F;
+    padding: 10px;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+
+}
+
+.lcp-title img {
+
+    width: 20%;
+
+
+}
+
+.lcp-info {
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+    background-size: contain;
+}
+
+.lcp-info p {
+
+    width: 70%;
+    z-index: 2;
+    padding: 0px 0px 10px 10px;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+.lcp-api-link a {
+    min-width: 20%;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lcp-api-link a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    left: 0;
+    width: 15%;
+
+}
+
+.AppLink {
+    font-size: 15px !important;
+    margin-right: 25px;
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    .lcp-info p {
+
+        width: 70%;
+        font-weight: 500;
+        margin: 0;
+        font-size: 8px;
+    }
+
+    .lcp-info {
+        background-size: cover;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .lcp-info p {
+
+        width: 70%;
+        font-weight: 500;
+        margin: 0;
+        font-size: 8px;
+    }
+
+    .lcp-info {
+        background-size: contain;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+    .lcp-info p {
+        width: 70%;
+        font-weight: 500;
+        margin: 0;
+        font-size: 8px;
+    }
+
+    .lcp-info {
+        background-size: contain;
+    }
+
+}
+
+@media only screen and (max-width: 280px) {
+
+    .lcp-info p {
+        display: none;
+    }
+
+    .lcp-api-link a {
+        display: none;
+    }
+}
